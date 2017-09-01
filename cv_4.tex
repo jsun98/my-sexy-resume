@@ -1,0 +1,126 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.5in,right=0.75in,bottom=0.5in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Joshua Sun} % Your name
+\mobile{(+1) 647-887-5633}
+\email{joshuasun1998@icloud.com}
+\homepage{joshsun.ca}
+\github{jsun98}
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	Skills SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Experienced: & JavaScript(ES6), Java, C++, NodeJS, MongoDB\\
+Proficient: & C, MySQL, Git, HTML5, CSS3, Agile, Arduino\\
+Frameworks \& Tools: & React/Redux, jQuery, Selenium, Jenkins, Android API, Bash \\
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+\begin{expSec}{OMERS Corporation}{May 2017 - Aug. 2017}{Automation Developer}{OMERS is Canada's largest pension fund with \$72 billion in net assets.}
+\item Implemented distributed test execution with the Selenium Grid framework (Java) that allowed up to 8 tests to run concurrently in Jenkins.
+\item Developed several RESTful web apps (NodeJS, MongoDB, ReactJS) to automate the test data creation process, reducing the running time of each test case by 35\%.
+\item Refactored 47 scripts to use OOP paradigms and hosted weekly JavaScript knowledge sessions.
+\item Awarded by the Vice President of IT for unique contributions to the automation team.
+\end{expSec}
+
+\begin{expSec}{MentorMap}{Apr. 2017 - Present}{Co-Founder, Full Stack Developer}{MentorMap is a start-up that connects prospective university students with current university students.}
+\item Developed a complex and scalable web stack in NodeJS, MongoDB, HTML and CSS that schedules video sessions, handles user data and processes payments.
+\item Led a team of 5, coordinated recruitment sessions and competed in a start-up funding pitch.
+\end{expSec}
+
+\begin{expSec}{Crosswing Robotics}{Sept. 2015 - Feb. 2016}{Embedded Software Developer}{Crosswing is a local start-up and creator of the patented VirtualMe\texttrademark\space telecommunications platform.}
+\item Designed an obstacle avoidance system for the VirtualMe\texttrademark\space using ultrasonic sensors and Arduino.
+\end{expSec}
+
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+
+\begin{projSec}{RealGen}{Aug. 2017}
+\item Real estate website builder that integrates with MLS and populates data in website templates.
+\item Currently a free service used by 18 agents, each saving \$25 per website.
+\end{projSec}
+
+\begin{projSec}{LISP/Scheme Interpreter}{May. 2017}
+\item A miniature interpreter written in C++ using lexical analysis, REPL and OOP concepts.
+\end{projSec}
+
+\begin{projSec}{RogueOne}{Nov. 2016}
+\item Rendition of the classic Rogue RPG game using C++ and the Tiva Launchpad accelerometer.
+\item Featuring smart AI with combat techniques, a map generation algorithm and collision detection.
+\end{projSec}
+
+\begin{projSec}{Clash of Civilizations App}{Ongoing}
+\item A turn-based multiplayer strategy game where each player/nation fights for world dominance.
+\item Featuring smart AI with combat techniques, a map generation algorithm and collision detection.
+\end{projSec}
+
+
+\end{rSection}
+
+
+\begin{rSection}{Honors}
+
+\begin{honorSec}{6th Place @ YHack}{Competed Against 67 Teams at Yale University }{Dec. 2016}\end{honorSec}
+\begin{honorSec}{Governor General's Academic Medal}{Highest GPA in High School of 439 Students}{Jun. 2016}\end{honorSec}
+\begin{honorSec}{Top 25\% in Canadian Computing Competition}{Out of 1925 Participants}{May 2015}\end{honorSec}
+\vspace{1em} 
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+\subsectiontitlestyle{University of Waterloo}{Sept. 2016 - Present}{}
+\vspace{-0.75em}
+\\ Bachelor of Software Engineering, Honors, Co-op \hfill {CGPA: 3.61 } 
+
+\end{rSection}
+
+\end{document}
