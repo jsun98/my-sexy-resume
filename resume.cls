@@ -28,6 +28,7 @@
 \usepackage{fontawesome}
 \RequirePackage[hidelinks,unicode]{hyperref}
 \usepackage{fontspec}
+\usepackage{xcolor}
 \setmainfont{Arial}
 
 \pagestyle{empty} % Suppress page numbers
@@ -35,8 +36,9 @@
 
 %----------------------------------------------------------------------------------------
 %	HEADINGS COMMANDS: Commands for printing name and address
-%----------------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------
 
+\definecolor{gray}{HTML}{696969}
 \def \name#1{\def\@name{#1}} % Defines the \name command to set name
 \def \@name {} % Sets \@name to empty by default
 \newcommand*{\github}[1]{\def\@github{#1}}
@@ -44,7 +46,7 @@
 \newcommand*{\homepage}[1]{\def\@homepage{#1}}
 \newcommand*{\mobile}[1]{\def\@mobile{#1}}
 \newcommand*{\sectionspace}[0]{\vspace{0.5em}}
-\newcommand*{\sectionitemspace}[0]{\vspace{0.5em}}
+\newcommand*{\sectionitemspace}[0]{\vspace{0.25em}}
 \newcommand*{\sectionsubtitlespace}[0]{\vspace{0.25em}}
 \newcommand*{\sectiontitlestyle}[1]{{
   \fontsize{14pt}{1em} 
@@ -110,7 +112,7 @@
   \sectiontitlestyle{#1}
   \sectionlineskip
   \hrule % Horizontal line
-  \vspace{0.25em}
+  \vspace{0.5em}
   \begin{list}{}{ % List for each individual item in the section
     \setlength{\leftmargin}{1.5em} % Margin within the section
   }
