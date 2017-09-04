@@ -72,13 +72,14 @@
 % \printname is used to print the name as a page header
 \def \printname {
 	\begin{center}
-    	\bf\fontsize{32pt}{1em}\selectfont \@name
+    	\bf\fontsize{32pt}{1em}\selectfont \@name\vspace{-0.15em}
     \end{center}
     
 }
 
 \def \printsocial {
 	\begin{center}
+    	{\Large Software Engineering Student\vspace{0.25em}\\}
         \faMobile\space\@mobile
         \space\textbar\space
     	\href{mailto:\@email}{\faEnvelope\space\@email}
@@ -128,7 +129,7 @@
 \newenvironment{expSec}[4]{
  {\subsectiontitlestyle{#1}{#2}{#3}} 
  {\subsectiondescriptionstyle{#4}}
-  \begin{list}{$\cdot$}{\leftmargin=0.8em} % \cdot used for bullets, no indentation
+  \begin{list}{$\textbullet$}{\leftmargin=0.8em}
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
@@ -139,10 +140,10 @@
 %	PROJECTS FORMATTING
 %----------------------------------------------------------------------------------------
 
-\newenvironment{projSec}[2]{
- {\subsectiontitlestyle{#1}{#2}{}}
+\newenvironment{projSec}[3]{
+ {\subsectiontitlestyle{#1}{#2}{#3}}
   \vspace{-1em}
-  \begin{list}{$\cdot$}{\leftmargin=0.8em} % \cdot used for bullets, no indentation
+  \begin{list}{$\textbullet$}{\leftmargin=0.8em} % \cdot used for bullets, no indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
