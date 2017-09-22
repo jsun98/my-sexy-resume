@@ -79,7 +79,7 @@
 
 \def \printsocial {
 	\begin{center}
-    	{\Large Software Engineering Student\vspace{0.25em}\\}
+    	{\Large 2A Software Engineering Student\vspace{0.25em}\\}
         \faMobile\space\@mobile
         \space\textbar\space
     	\href{mailto:\@email}{\faEnvelope\space\@email}
