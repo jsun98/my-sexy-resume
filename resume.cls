@@ -54,11 +54,18 @@
 }}
 \newcommand*{\subsectiontitlestyle}[3]{{
   	\fontsize{12pt}{1em} 
+  	{\bf #1} \space\it {#2} \hfill {#3}\\
+}}
+
+\newcommand*{\projectsubsectiontitlestyle}[3]{{
+  	\fontsize{12pt}{1em} 
   	{\bf #1} \space\it {#3} \hfill {#2} \vspace{-0.2em} \\
 }}
-\newcommand*{\subsectiondescriptionstyle}[1]{{
-  	\fontsize{8pt}{1em} 
-	\vspace{0em}\it {#1}
+
+\newcommand*{\subsectiondescriptionstyle}[2]{{
+  	{\fontsize{8pt}{1em}  \vspace{0em}\it {#1}} 
+	\hfill 
+	{\fontsize{14pt}{1em} {#2}}
 }}
 \newcommand*{\honoritemstyle}[3]{{
   	{\fontsize{10pt}{1em}
@@ -79,7 +86,7 @@
 
 \def \printsocial {
 	\begin{center}
-    	{\Large 2A Software Engineering Student\vspace{0.25em}\\}
+    	{\Large 2B Software Engineering Student\vspace{0.25em}\\}
         \faMobile\space\@mobile
         \space\textbar\space
     	\href{mailto:\@email}{\faEnvelope\space\@email}
@@ -126,9 +133,9 @@
 %	WORK EXPERIENCE FORMATTING
 %----------------------------------------------------------------------------------------
 
-\newenvironment{expSec}[4]{
+\newenvironment{expSec}[5]{
  {\subsectiontitlestyle{#1}{#2}{#3}} 
- {\subsectiondescriptionstyle{#4}}
+ {\subsectiondescriptionstyle{#4}{#5}}
   \begin{list}{$\textbullet$}{\leftmargin=0.8em}
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
@@ -141,7 +148,7 @@
 %----------------------------------------------------------------------------------------
 
 \newenvironment{projSec}[3]{
- {\subsectiontitlestyle{#1}{#2}{#3}}
+ {\projectsubsectiontitlestyle{#1}{#2}{#3}}
   \vspace{-1em}
   \begin{list}{$\textbullet$}{\leftmargin=0.8em} % \cdot used for bullets, no indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
