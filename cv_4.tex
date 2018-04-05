@@ -40,7 +40,7 @@
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 Languages: & Java, Python, JavaScript, C/C++ \\
-Machine Learning: & Vowpal Wabbit, TensorFlow, Scikit-learn, Gradient Boosting Decision Trees (GBDT) \\
+Machine Learning: & Vowpal Wabbit, Spark ML, TensorFlow, Gradient Boosting Decision Trees (GBDT) \\
 Big Data Analysis: & Hadoop, MapReduce, HDFS, Pig, Oozie, Storm, Avro \\
 Tools: & Git, Maven, Docker, Travis CI, Screwdriver, Jenkins, Heroku, AWS \\
 Databases: & MySQL, MongoDB, NoSQL \\
@@ -58,12 +58,12 @@ Databases: & MySQL, MongoDB, NoSQL \\
 {Yahoo!}
 {Backend Software Engineer | Mail Anti-Spam}
 {Sunnyvale, California}
-{The Anti-Spam team analyzes tens of billions of SMTP requests daily for Yahoo!, AOL and Oath.}
+{The Anti-Spam team analyzes tens of billions of SMTP requests daily for Yahoo!, AOL. and Oath.}
 {Jan 2018 - Apr 2018}
-\item Built a terabyte-scale distributed model training pipeline using Java MapReduce API, HDFS, Pig and Oozie which is capable of processing over 10 billion training examples (70-100 dimensions) in under 30 minutes.
-\item Trained and tested various Vowpal Wabbit and Gradient Boosting Decision Trees models using Hadoop-Streaming, MPI AllReduce and the Minimum Spanning Tree, reducing training latency from days to minutes.
-\item Enhanced the existing Naive Bayes spam classifier by constructing a Random Forest classifier, resulting in an additional 250 millions spam messages captured daily and decreased the false-positive rate by 11\%.
-\item Designed an Apache Storm duplicate detection bolt for an online spam detection algorithm using Guava Cache, which decreased traffic in the cloud message queue by 35\%.
+\item Built a terabyte-scale distributed model training pipeline using Java, MapReduce API, HDFS, Pig and Oozie which is capable of parallel processing over 10 billion training examples in under 30 minutes.
+\item Trained and tested various Vowpal Wabbit and GBDT models using Hadoop-Streaming, MPI AllReduce and the Minimum Spanning Tree, reducing training latency from days to minutes.
+\item Enhanced the existing Naive Bayes spam classifier by adding a Random Forest classifier, resulting in an additional 250 million spam messages captured daily and decreased the false-positive rate by 11\%.
+\item Designed an Apache Storm duplicate detection bolt for an online spam detection algorithm using Guava Cache, increasing throughput of the cloud messaging queue by 65\%.
 
 \end{expSec}
 
@@ -96,12 +96,12 @@ Databases: & MySQL, MongoDB, NoSQL \\
 \begin{rSection}{Projects}
 
 \begin{projSec}{Stock Predictor + Trade-bot}{}{Python, TensorFlow, Scikit-learn, MySQL \href{https://github.com/UWCESEDUO/stock-prediction}{\space\faGithub}}
-\item Applied supervised learning methods such as Neural Networks, Random Forest and Gradient Boosting regressors to forecast stock prices based on past returns and financial indicators.
-\item Developed a simulation trade-bot constructs a portfolio of stocks to diversify risks.
+\item Applied supervised learning methods such as Neural Networks, Random Forests and Gradient Boosting regressors to forecast stock prices based on past returns and financial indicators.
+\item Developed a simulation trade-bot that buys and sells stocks based on the model forecasts.
 \end{projSec}
 
 \begin{projSec}{Lacs/LISP Compilers}{}{Scala, C++ \href{https://github.com/jsun98/SchemePlusPlus}{\space\faGithub}}
-\item Implemented the CYK parsing algorithm, a garbage collector and functional programming concepts.
+\item Implemented the CYK parsing algorithm, heap/stack memory management and a garbage collector.
 \end{projSec}
 
 \end{rSection}

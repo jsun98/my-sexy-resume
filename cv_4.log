@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2017.5.23)  3 APR 2018 22:10
+This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2017.5.23)  4 APR 2018 22:52
  restricted system commands enabled.
  file:line:error style messages enabled.
 **cv_4.tex
@@ -35,7 +35,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.153 seconds
+luaotfload | main : initialization completed in 0.145 seconds
 Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
 (./resume.cls
 Document Class: resume 2010/07/10 v0.9 Resume class
@@ -786,11 +786,6 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 41.
 
-Overfull \hbox (3.04948pt too wide) in paragraph at lines 41--48
-[][] 
- []
-
-
 LaTeX Warning: Command \textbullet invalid in math mode on input line 63.
 
 
@@ -854,14 +849,14 @@ Here is how much of LuaTeX's memory you used:
  396 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 4 attribute, 51 glue_spec, 4 attribute_list
 , 1 write nodes
-   avail lists: 1:1,2:620,3:139,4:43,5:67,6:2955,7:914,8:21,9:119,10:12,11:275
+   avail lists: 1:1,2:620,3:139,4:43,5:66,6:2901,7:912,8:21,9:119,10:12,11:263
  23301 multiletter control sequences out of 65536+600000
  49 fonts using 11604367 bytes
  49i,6n,70p,358b,330s stack positions out of 5000i,500n,10000p,200000b,100000s
 </Library/Fonts/Arial Italic.ttf></usr/local/texlive/2017/texmf-dist/fonts/opent
 ype/public/fontawesome/FontAwesome.otf></Library/Fonts/Arial.ttf></Library/Fonts
 /Arial Bold.ttf>
-Output written on cv_4.pdf (1 page, 83403 bytes).
+Output written on cv_4.pdf (1 page, 83754 bytes).
 
 PDF statistics: 48 PDF objects out of 1000 (max. 8388607)
  32 compressed objects within 1 object stream
