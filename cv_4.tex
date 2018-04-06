@@ -23,6 +23,7 @@
 \documentclass{resume} % Use the custom resume.cls style
 
 \usepackage[left=0.75in,top=0.5in,right=0.75in,bottom=0.5in]{geometry} % Document margins
+
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Joshua Sun} % Your name
@@ -32,6 +33,7 @@
 \github{jsun98}
 
 \begin{document}
+
 %----------------------------------------------------------------------------------------
 %	Skills SECTION
 %----------------------------------------------------------------------------------------
@@ -40,8 +42,8 @@
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 Languages: & Java, Python, JavaScript, C/C++ \\
-Machine Learning: & Vowpal Wabbit, Spark ML, TensorFlow, Gradient Boosting Decision Trees (GBDT) \\
-Big Data Analysis: & Hadoop, MapReduce, HDFS, Pig, Oozie, Storm, Avro \\
+Machine Learning: & Vowpal Wabbit, TensorFlow, Gradient Boosting Decision Trees (GBDT) \\
+Big Data Analysis: & Hadoop, MapReduce, HDFS, Hadoop-Streaming, Pig, Oozie, Storm, Avro \\
 Tools: & Git, Maven, Docker, Travis CI, Screwdriver, Jenkins, Heroku, AWS \\
 Databases: & MySQL, MongoDB, NoSQL \\
 \end{tabular}
@@ -60,10 +62,10 @@ Databases: & MySQL, MongoDB, NoSQL \\
 {Sunnyvale, California}
 {The Anti-Spam team analyzes tens of billions of SMTP requests daily for Yahoo!, AOL. and Oath.}
 {Jan 2018 - Apr 2018}
-\item Built a terabyte-scale distributed model training pipeline using Java, MapReduce API, HDFS, Pig and Oozie which is capable of parallel processing over 10 billion training examples in under 30 minutes.
-\item Trained and tested various Vowpal Wabbit and GBDT models using Hadoop-Streaming, MPI AllReduce and the Minimum Spanning Tree, reducing training latency from days to minutes.
-\item Enhanced the existing Naive Bayes spam classifier by adding a Random Forest classifier, resulting in an additional 250 million spam messages captured daily and decreased the false-positive rate by 11\%.
-\item Designed an Apache Storm duplicate detection bolt for an online spam detection algorithm using Guava Cache, increasing throughput of the cloud messaging queue by 65\%.
+\item Built a terabyte-scale distributed machine learning pipeline on Hadoop and wrote a series of MapReduce jobs in Java and Pig for data generation, feature selection, model training and model evaluation.
+\item Scaled Vowpal Wabbit and GBDT libraries to parallel process 10 billion training examples in under 30 minutes by using Hadoop-Streaming, MPI AllReduce and the spanning tree, reducing training latency by 280\%.
+\item Enhanced the existing inbound spam detection system by adding a Random Forest spam classifier, resulting in an additional 150 million spam messages captured daily and decreased the false-positive rate by 11\%.
+\item Designed an Apache Storm duplicate detection bolt using Guava Cache for an online spam detection algorithm, increasing throughput of the cloud message queue by 65\%.
 
 \end{expSec}
 
@@ -73,7 +75,7 @@ Databases: & MySQL, MongoDB, NoSQL \\
 {Toronto, Ontario}
 {MentorMap is a startup that connects prospective students with current university students.}{May 2017 - Nov 2017}
 \item Architected a video scheduling web app for mentors and mentees using Node.js, MongoDB, HTML and CSS.
-\item Designed a scalable MongoDB schema that avoided transactions by leveraging embedded documents.
+\item Designed a scalable MongoDB/Mongoose model that avoided transactions by using embedded documents.
 \item Led a team of 5 in software development and marketing and recruited 100+ members.
 \end{expSec}
 
@@ -83,7 +85,7 @@ Databases: & MySQL, MongoDB, NoSQL \\
 {Toronto, Ontario}
 {OMERS is Canada's largest pension fund with \$72 billion in net assets.}
 {May 2017 - Aug 2017}
-\item Developed RESTful React/Node.js web applications to simplify the mock data creation workflow for testers.
+\item Developed React/Redux/Node.js web applications to simplify the mock data creation workflow for 40 testers.
 \item Optimized the Selenium Grid infrastructure to efficiently run tests in parallel, reducing runtime by 45\%. \end{expSec}
 
 \end{rSection}
@@ -96,7 +98,7 @@ Databases: & MySQL, MongoDB, NoSQL \\
 \begin{rSection}{Projects}
 
 \begin{projSec}{Stock Predictor + Trade-bot}{}{Python, TensorFlow, Scikit-learn, MySQL \href{https://github.com/UWCESEDUO/stock-prediction}{\space\faGithub}}
-\item Applied supervised learning methods such as Neural Networks, Random Forests and Gradient Boosting regressors to forecast stock prices based on past returns and financial indicators.
+\item Applied supervised learning methods such as Neural Networks, Random Forest and Gradient Boosting regressors to forecast the S\&P 500 stock prices based on past returns and financial indicators.
 \item Developed a simulation trade-bot that buys and sells stocks based on the model forecasts.
 \end{projSec}
 
@@ -125,7 +127,7 @@ Databases: & MySQL, MongoDB, NoSQL \\
 
 \begin{rSection}{Honors}
 
-\begin{honorSec}{Top 10 Finalist @ TreeHacks}{Competed against 115 teams at the Stanford University hackathon}{Feb 2018}\end{honorSec}
+\begin{honorSec}{6th Place @ YHack}{Competed against 115 teams at the Yale University hackathon}{Dec 2017}\end{honorSec}
 \begin{honorSec}{Governor General's Academic Medal}{Highest GPA in high school of 439 students}{Jun 2016}\end{honorSec}
 \vspace{1em} 
 
