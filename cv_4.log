@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2017.5.23)  5 APR 2018 22:57
+This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2017.5.23)  7 APR 2018 16:03
  restricted system commands enabled.
  file:line:error style messages enabled.
 **cv_4.tex
@@ -35,7 +35,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.146 seconds
+luaotfload | main : initialization completed in 0.133 seconds
 Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
 (./resume.cls
 Document Class: resume 2010/07/10 v0.9 Resume class
@@ -786,6 +786,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 43.
 
+Overfull \hbox (3.04948pt too wide) in paragraph at lines 43--50
+[][] 
+ []
+
+
 LaTeX Warning: Command \textbullet invalid in math mode on input line 65.
 
 
@@ -844,22 +849,22 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 136.
 )
 
 Here is how much of LuaTeX's memory you used:
- 19508 strings out of 494481
+ 19512 strings out of 494481
  100000,552014 words of node,token memory allocated
  396 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 4 attribute, 51 glue_spec, 4 attribute_list
 , 1 write nodes
-   avail lists: 1:1,2:620,3:139,4:43,5:62,6:2941,7:919,8:21,9:119,10:12,11:265
- 23301 multiletter control sequences out of 65536+600000
- 49 fonts using 11604367 bytes
+   avail lists: 1:1,2:638,3:139,4:43,5:71,6:2950,7:919,8:21,9:119,10:12,11:266
+ 23302 multiletter control sequences out of 65536+600000
+ 50 fonts using 12008375 bytes
  49i,6n,70p,358b,330s stack positions out of 5000i,500n,10000p,200000b,100000s
-</Library/Fonts/Arial Italic.ttf></usr/local/texlive/2017/texmf-dist/fonts/opent
-ype/public/fontawesome/FontAwesome.otf></Library/Fonts/Arial.ttf></Library/Fonts
-/Arial Bold.ttf>
-Output written on cv_4.pdf (1 page, 83842 bytes).
+</Library/Fonts/Arial Bold Italic.ttf></Library/Fonts/Arial Italic.ttf></usr/loc
+al/texlive/2017/texmf-dist/fonts/opentype/public/fontawesome/FontAwesome.otf></L
+ibrary/Fonts/Arial.ttf></Library/Fonts/Arial Bold.ttf>
+Output written on cv_4.pdf (1 page, 99502 bytes).
 
-PDF statistics: 48 PDF objects out of 1000 (max. 8388607)
- 32 compressed objects within 1 object stream
+PDF statistics: 55 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
