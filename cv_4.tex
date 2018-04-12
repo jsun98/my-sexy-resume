@@ -62,10 +62,10 @@ Databases: & MySQL, MongoDB, NoSQL \\
 {Sunnyvale, California}
 {The Anti-spam team analyzes \textbf{tens of billions} of SMTP requests daily for Yahoo!, AOL. and Oath.}
 {Jan 2018 - Apr 2018}
-\item Built a \textbf{terabyte-scale} distributed machine learning pipeline on Hadoop and wrote a series of MapReduce jobs in Java and Pig for data generation, feature selection, model training and model evaluation.
-\item Scaled Vowpal Wabbit and GBDT libraries to \textbf{parallel process 10 billion training examples} in under 30 minutes by using Hadoop-Streaming, MPI AllReduce and the spanning tree, reducing training latency \textbf{by 280\%}.
-\item Enhanced the existing inbound spam detection system by adding a \textbf{Random Forest spam classifier}, resulting in an additional \textbf{150 million} spam messages captured daily and decreased the false-positive rate by 11\%.
-\item Designed an Apache Storm duplicate detection bolt using Guava Cache for an online spam detection algorithm, increasing throughput of the cloud message queue by 65\%.
+\item Designed and productionized a spam classifier using a \textbf{feedforward neural network} with a \textbf{99.96\%} accuracy on 240 billion data points, resulting in \textbf{400 million additional spams} captured daily.
+\item Built a \textbf{terabyte-scale} distributed machine learning data pipeline on Hadoop and wrote a series of MapReduce jobs in Java and Pig for data generation, feature selection, model training and model evaluation.
+\item Scaled Vowpal Wabbit and GBDT libraries to \textbf{parallel train on 10 billion training examples} in under 30 minutes by using Hadoop-Streaming and the Spanning Tree, reducing training latency \textbf{by 280\%}.
+\item Designed an \textbf{Apache Storm} duplicate detection bolt using Guava Cache for an online spam detection algorithm, increasing throughput of the cloud message queue by 65\%.
 
 \end{expSec}
 
@@ -117,7 +117,7 @@ Databases: & MySQL, MongoDB, NoSQL \\
 
 \subsectiontitlestyle{University of Waterloo}{}{Sep 2016 - Apr 2021}{}
 \vspace{-1em}
-\\ Bachelor of Software Engineering, Joint Combinatorics and Optimization \hfill {CGPA: 3.70 }
+\\ Bachelor of Software Engineering, Joint Combinatorics and Optimization \hfill {GPA: 3.70 }
 
 \end{rSection}
 
